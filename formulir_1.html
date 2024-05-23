@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pengisian Riwayat Hidup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="formulir_2.html" method="get">
+
+<h2>Formulir Pengisian Riwayat Hidup</h2>
+    <label for="">Keterangan Pribadi</label><br>
+    <div class="form-group">
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="nip">N.I.P:</label>
+        <input type="text" id="nip" name="nip">
+    </div>
+
+    <div class="form-group">
+        <label for="golongan">golongan:</label>
+        <select id="golongan" name="golongan">
+            <option value="Pilih_Golongan">Pilih Golongan</option>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="IV">IV</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="pangkat">Pangkat:</label>
+        <input type="text" id="pangkat" name="pangkat">
+    </div>
+
+    <div class="form-group">
+        <label for="tempat_lahir">Tempat Lahir:</label>
+        <input type="text" id="tempat_lahir" name="tempat_lahir">
+    </div>
+
+    <div class="form-group">
+        <label for="Kabupaten_lahir">Kabupaten/kota lahir:</label>
+        <input type="text" id="Kabupaten_lahir" name="Kabupaten_lahir">
+    </div>
+
+    <div class="form-group">
+        <label for="birthdate">Tanggal Lahir:</label>
+        <input type="date" id="birthdate" name="birthdate">
+    </div>
+
+    <div class="form-group">
+        <label for="gender">Jenis Kelamin:</label>
+        <select id="gender" name="gender" required>
+            <option value="Jenis_kelamin">Jenis Kelamin</option>
+            <option value="male">Pria</option>
+            <option value="female">Wanita</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="religion">Agama:</label>
+        <select id="religion" name="religion">
+            <option value="Agama">Agama</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katholik">Katholik</option>
+            <option value="Budha">Budha</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Konghucu">Konghucu</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="status_perkawinan">Status Perkawinan:</label>
+        <select id="status_perkawinan" name="status_perkawinan">
+            <option value="status_perkawinan">Status Perkawinan</option>
+            <option value="Belum_kawin">Belum Kawin</option>
+            <option value="Kawin">Kawin</option>
+            <option value="Duda/janda">Duda/Janda</option>
+        </select>
+    </div>
+
+    <label for="">Alamat Rumah:</label><br>
+    
+    <div class="form-group">
+        <label for="address">Alamat:</label>
+        <input type="text" id="address" name="address">
+    </div>
+
+    <div class="form-group">
+        <label for="kelurahan">Kelurahan/desa:</label>
+        <input type="text" id="kelurahan" name="kelurahan">
+    </div>
+    <div class="form-group">
+        <label for="kecamatan">Kecamatan:</label>
+        <input type="text" id="kecamatan" name="kecamatan">
+    </div>
+    <div class="form-group">
+        <label for="Kabupaten">Kabupaten:</label>
+        <input type="email" id="Kabupaten" name="Kabupaten">
+    </div>
+    <div class="form-group">
+        <label for="Provinsi">Provinsi:</label>
+        <input type="email" id="Provinsi" name="Provinsi">
+    </div>
+
+    <label for="">Keterangan Tubuh</label><br>
+
+    <div class="form-group">
+        <label for="Tinggi">Tinggi(cm):</label>
+        <input type="text" id="Tinggi" name="Tinggi">
+    </div>
+
+    <div class="form-group">
+        <label for="Berat">Berat Badan(Kg):</label>
+        <input type="Berat" id="Berat" name="Berat">
+    </div>
+
+    <div class="form-group">
+        <label for="Bentu_muka">Bentu muka:</label>
+        <input id="Bentu_muka" name="Bentu_muka" rows="4">
+    </div>
+
+    <div class="form-group">
+        <label for="Warna_kulit">Warna_kulit:</label>
+        <input id="Warna_kulit" name="Warna_kulit">
+    </div>
+    <div class="form-group">
+        <label for="ciri_khas">Ciri Khas:</label>
+        <input id="ciri_khas" name="ciri_khas">
+    </div>
+    <div class="form-group">
+        <label for="cacat_tubuh">Cacat Tubuh:</label>
+        <input id="cacat_tubuh" name="cacat_tubuh">
+    </div>
+    <div class="form-group">
+        <label for="hobby">Kegemaran:</label>
+        <input id="hobby" name="hobby">
+    </div>
+    
+    <button type="submit">next</button>
+</form>
+
+</body>
+</html>
